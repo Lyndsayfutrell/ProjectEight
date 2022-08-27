@@ -4,7 +4,14 @@ body {
   background-color: #fafafa;
 }
 
-/* line 7, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+/* line 6, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 11, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
 .overlay {
   position: absolute;
   top: 0;
@@ -14,14 +21,15 @@ body {
   background: rgba(100, 100, 100, 0.4);
 }
 
-/* line 16, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+/* line 20, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
 .grid-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* line 22, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+/* line 27, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
 .card {
   border: 1px #c7c7c7 solid;
   border-radius: 5px;
@@ -32,35 +40,35 @@ body {
   margin: 1em;
 }
 
-/* line 31, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+/* line 36, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
 img {
   border-radius: 50%;
   height: 75px;
   padding: 1em;
 }
 
-/* line 38, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+/* line 43, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
 .text-container {
   font-size: .7em;
 }
 
-/* line 40, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+/* line 45, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
 .text-container p:first-of-type {
   margin-bottom: 0;
   margin-top: .5em;
 }
 
-/* line 44, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+/* line 49, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
 .text-container p:last-of-type {
   margin-top: .25em;
 }
 
-/* line 48, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+/* line 53, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
 p {
   color: #aeaeae;
 }
 
-/* line 51, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+/* line 56, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
 h1 {
   font-size: 1em;
   margin-top: 2em;
@@ -68,9 +76,17 @@ h1 {
   text-transform: uppercase;
 }
 
-/* line 58, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+/* line 63, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
 h2 {
   margin-bottom: 0;
+}
+
+/* line 67, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_base.scss */
+.search {
+  height: 25px;
+  width: 200px;
+  margin-right: 1em;
+  font-size: .75em;
 }
 
 /* line 1, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_modal.scss */
