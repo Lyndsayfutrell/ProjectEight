@@ -87,6 +87,8 @@ h2 {
   width: 200px;
   margin-right: 1em;
   font-size: .75em;
+  border-radius: 5px;
+  padding-left: 1em;
 }
 
 /* line 1, ../../../../../Users/lyndsayfutrell/Desktop/coding projects/ProjectEight/scss/_modal.scss */
