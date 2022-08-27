@@ -7,6 +7,9 @@ const overlay = document.querySelector(".overlay");
 const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
 const card = document.getElementsByClassName('card');
+const leftArrow = document.querySelector('.modal-arrow2');
+const rightArrow = document.querySelector('.modal-arrow1');
+let index = '';
 
 // fetch data from API
 fetch(urlAPI)
@@ -67,7 +70,7 @@ gridContainer.addEventListener('click', e => {
     if (e.target !== gridContainer) {
     // select the card element based on its proximity to actual element clicked
         const card = e.target.closest(".card");
-        const index = card.getAttribute('data-index');
+        index = card.getAttribute('data-index');
         displayModal(index);
     }
 });
@@ -93,4 +96,24 @@ modalClose.addEventListener('click', () => {
             }}
 
 
+    })
+
+    rightArrow.addEventListener("click", e =>{
+        if (index != 11) {
+        index = Number.parseInt(index, 10) + 1;
+        displayModal(index);
+        } else {
+        index = 0;    
+        displayModal(0);   
+        }
+    })
+
+    leftArrow.addEventListener("click", e =>{
+        if (index != 0) {
+        index = Number.parseInt(index, 10) - 1;
+        displayModal(index);
+        } else {
+        index = 11;    
+        displayModal(11);   
+        }
     })
